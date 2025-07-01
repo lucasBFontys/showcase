@@ -34,10 +34,47 @@ This is my personal portfolio website POC. It is **not finished** and currently 
 
 ---
 
-## 🛠️ To Run Locally
+## 🛠️ Getting Started
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+- [Git](https://git-scm.com/) (for cloning the repo)
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/lucasBFontys/showcase.git
+   cd showcase
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser:**
+   Visit [http://localhost:3000](http://localhost:3000) to view the site.
+
+---
+
+## 📝 Usage
+- Edit the code in the `src/app` directory to customize your portfolio.
+- The site will auto-reload as you save changes.
+
+---
+
+## 📦 Build for Production
+To build the app for production:
 ```bash
-npm install
-npm run dev
+npm run build
+npm start
 ```
 
 ---
