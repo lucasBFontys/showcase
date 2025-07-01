@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const name = "Lucas Bertani";
 const about =
   `welcome to my portfolio.\ni'm lucas bertani,\na creative front-end developer\nfocused on functional, honest design\nand modern web experiences.\nexplore my work and bio to learn more.`;
-const projects = Array.from({ length: 9 }).map((_, i) => ({
+const projects = Array.from({ length: 9 }).map(() => ({
   number: "01",
   title: "Tittle",
   spec: "Specification · Specification",
@@ -108,7 +108,7 @@ const HomePage = () => {
         {/* Hero Section */}
         <section className="flex flex-col md:flex-row w-full max-w-7xl mx-auto pt-24 pb-8 px-4 md:px-24 gap-12 items-start md:items-center justify-between min-h-[220px] md:min-h-[320px]">
           <div className="flex flex-col gap-8 max-w-full md:max-w-lg">
-            <h1 className="caps tight text-[2.5rem] sm:text-[4rem] md:text-[5rem] mb-2 accent" tabIndex={0} aria-label={`Name: ${name}`}>{name.split(" ").map((n, i) => <span key={i} className="block">{n}</span>)}</h1>
+            <h1 className="caps tight text-[2.5rem] sm:text-[4rem] md:text-[5rem] mb-2 accent" tabIndex={0} aria-label={`Name: ${name}`}>{name.split(" ").map((n) => <span key={n} className="block">{n}</span>)}</h1>
             <pre className="text-base font-normal lowercase font-sans whitespace-pre-line leading-snug tracking-normal" tabIndex={0} aria-label="About">{about}</pre>
           </div>
           <div className="flex-1 flex items-center justify-end w-full mt-4 md:mt-0">
